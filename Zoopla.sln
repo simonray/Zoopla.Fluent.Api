@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zoopla.Fluent.Api", "Zoopla.Fluent.Api\Zoopla.Fluent.Api.csproj", "{BCE19DF8-3FDC-4108-A5D4-93C8955A4DC2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zoopla.Fluent.Api.Tests", "Zoopla.Fluent.Api.Tests\Zoopla.Fluent.Api.Tests.csproj", "{029967E6-0154-4202-895A-FEB67E000071}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zoopla.Console", "Zoopla.Console\Zoopla.Console.csproj", "{3BBFC71A-F87B-4E33-84C0-E16E572C5D02}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BCE19DF8-3FDC-4108-A5D4-93C8955A4DC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BCE19DF8-3FDC-4108-A5D4-93C8955A4DC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BCE19DF8-3FDC-4108-A5D4-93C8955A4DC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BCE19DF8-3FDC-4108-A5D4-93C8955A4DC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{029967E6-0154-4202-895A-FEB67E000071}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{029967E6-0154-4202-895A-FEB67E000071}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{029967E6-0154-4202-895A-FEB67E000071}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{029967E6-0154-4202-895A-FEB67E000071}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BBFC71A-F87B-4E33-84C0-E16E572C5D02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BBFC71A-F87B-4E33-84C0-E16E572C5D02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BBFC71A-F87B-4E33-84C0-E16E572C5D02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BBFC71A-F87B-4E33-84C0-E16E572C5D02}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

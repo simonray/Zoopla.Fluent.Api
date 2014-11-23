@@ -1,13 +1,18 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30501.0
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zoopla.Fluent.Api", "Zoopla.Fluent.Api\Zoopla.Fluent.Api.csproj", "{BCE19DF8-3FDC-4108-A5D4-93C8955A4DC2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zoopla.Fluent.Api.Tests", "Zoopla.Fluent.Api.Tests\Zoopla.Fluent.Api.Tests.csproj", "{029967E6-0154-4202-895A-FEB67E000071}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zoopla.Console", "Zoopla.Console\Zoopla.Console.csproj", "{3BBFC71A-F87B-4E33-84C0-E16E572C5D02}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{56293E6A-BA39-483B-957E-F677B17B2C18}"
+	ProjectSection(SolutionItems) = preProject
+		Zoopla.Fluent.Api\readme.md = Zoopla.Fluent.Api\readme.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

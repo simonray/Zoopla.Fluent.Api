@@ -91,7 +91,6 @@
     <Compile Include="ZooplaFluentApi.PropertyLocation.cs">
       <DependentUpon>ZooplaFluentApi.cs</DependentUpon>
     </Compile>
-    <None Include="readme.md" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Zoopla.Api.shfbproj" />

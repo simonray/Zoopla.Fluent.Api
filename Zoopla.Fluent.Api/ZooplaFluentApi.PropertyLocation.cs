@@ -16,6 +16,11 @@ namespace Zoopla.Fluent.Api
             private ZooplaFluentApi Impl { get; set; }
             public PropertyLocation(ZooplaFluentApi impl) { Impl = impl; }
 
+            public IPropertyOptions In(string location)
+            {
+                return Impl.In(location);
+            }
+
             public IPropertyOptions In(Model.InOption option, string location)
             {
                 return Impl.In(option, location);

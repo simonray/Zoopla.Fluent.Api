@@ -112,6 +112,19 @@ namespace Zoopla.Fluent.Api
 
         #region IPropertyLocation
         /// <exclude />
+        public IPropertyOptions In(string location)
+        {
+            if (Postcode.TryParse(location, false) != null)
+            {
+                return In(InOption.Postcode, location);
+            }
+            else
+            {
+                return In(InOption.Area, location);
+            }
+        }
+
+        /// <exclude />
         public IPropertyOptions In(InOption option, string location)
         {
             switch (option)

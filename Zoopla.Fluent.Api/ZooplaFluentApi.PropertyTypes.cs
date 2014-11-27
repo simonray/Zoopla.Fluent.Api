@@ -35,6 +35,11 @@ namespace Zoopla.Fluent.Api
                 }
             }
 
+            public IPropertyOptions In(string location)
+            {
+                return Impl.In(location);
+            }
+
             public IPropertyOptions In(InOption option, string location)
             {
                 return Impl.In(option, location);

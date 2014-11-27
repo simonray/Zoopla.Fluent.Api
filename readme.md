@@ -20,7 +20,7 @@ Initialize the Api.
  Get a list of properties for sale in Cheltenham.
 
      var listings = Api.Sales
-         .In(InOption.Area, "Cheltenham"
+         .In("Cheltenham")
          .Go();
          
  Get a paged list of properties  
@@ -29,7 +29,7 @@ Initialize the Api.
      int count = Api
          .Sales
          .OfHouses
-         .In(InOption.Postcode, "GL52")
+         .In("GL52")
          .MinimumBeds(4)
          .MinimumPrice(250000)
          .MaximumPrice(350000)

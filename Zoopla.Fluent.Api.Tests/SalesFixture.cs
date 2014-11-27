@@ -9,6 +9,24 @@ namespace Zoopla.Fluent.Api.Tests
     public class SalesFixture : BaseFixture
     {
         [TestMethod]
+        public void Sales_ValidInArea_ReturnsFilledList()
+        {
+            var listings = Api.Sales
+                .In(AREA_VALID)
+                .Go();
+            Assert.AreNotEqual(listings.Count, 0);
+        }
+
+        [TestMethod]
+        public void Sales_ValidInPostcode_ReturnsFilledList()
+        {
+            var listings = Api.Sales
+                .In(OUTCODE_VALID)
+                .Go();
+            Assert.AreNotEqual(listings.Count, 0);
+        }
+        
+        [TestMethod]
         public void Sales_ValidArea_ReturnsFilledList()
         {
             var listings = Api.Sales

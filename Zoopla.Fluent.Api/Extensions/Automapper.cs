@@ -3,10 +3,10 @@ using System;
 using System.Linq;
 using Zoopla.Fluent.Api.Model;
 
+// Usage: Mapper.CreateMap<string, System.Uri>().ConvertUsing<StringToUriConverter>();
 namespace Zoopla.Fluent.Api.Extensions
 {
     /// <exclude/>
-    /// Usage: Mapper.CreateMap<string, System.Uri>().ConvertUsing<StringToUriConverter>();
     public class StringToUriConverter : ITypeConverter<string, System.Uri>
     {
         /// <exclude/>

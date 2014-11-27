@@ -76,6 +76,13 @@ namespace Zoopla.Fluent.Api
     public interface IPropertyLocation : IFluent
     {
         /// <summary>
+        /// Indicate a post code or location to which the query will be applyed to.
+        /// </summary>
+        /// <param name="location">Postcode (full or partial) or area</param>
+        /// <returns></returns>
+        IPropertyOptions In(string location);
+
+        /// <summary>
         /// Indicate the location where the query will be applyed to.
         /// </summary>
         /// <param name="option">Area or Postcode</param>

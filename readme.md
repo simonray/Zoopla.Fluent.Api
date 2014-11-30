@@ -1,4 +1,4 @@
-﻿# ZooplaFluentApi (.NET)
+﻿# Zoopla.Fluent.Api (.NET)
 
 The Zoopla Fluent API provides functionality to retieve property information into your application.
      
@@ -11,7 +11,7 @@ and update the appropriate configuration file. e.g.
 
 To get started with the API simply add a reference and create an instance of the <c>Zoopla.Fluent.Api</c> class to start accessing the services. 
 
-#Usage
+###Usage
 
 Initialize the Api.
 
@@ -45,23 +45,23 @@ Get a list of suggested locations for the search term "gloucester" from the sale
 
      var locations = Api.Suggestions("gloucester", SearchOption.SaleOrRentals);
 
-#Sample Application
+###Sample Application
 
-Provided is a basic console application that for a given property Id (-p) you can extract images (--ei) and floorplans (--ef).
+Provided is a basic console application that for a given property Id `(-p)` you can extract images `(--ei)` and floorplans `(--ef)`.
 
     Zoopla.Console -p ######## -o"C:\Downloads" --ei --ef
 
-#Stack
+###Stack
 * [Automapper](https://www.nuget.org/packages/AutoMapper)  
 * [Newton Json](https://www.nuget.org/packages/newtonsoft.json)
 * [Sandcastle](http://sandcastle.codeplex.com)  
 * [Sandcastle Help File Builder](http://shfb.codeplex.com)
 * [Command Line Parser Library](https://www.nuget.org/packages/CommandLineParser)
 
-#References
+###References
 * [Zoopla Developer API](http://developer.zoopla.com/home)  
 * [Zoopla Listing Documentation](http://developer.zoopla.com/docs/read/Property_listings)  
 * [Zoopla Autocomplete Documentation](http://developer.zoopla.com/docs/read/Geo_Autocomplete)
 
-#Tools
+###Tools
 * [Json to C# Code Generator](http://json2csharp.com)  

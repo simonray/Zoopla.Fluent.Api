@@ -203,7 +203,7 @@ namespace Zoopla.Fluent.Api
         /// <param name="value"></param>
         /// <returns></returns>
         /// <example>Keywords(new string[] { "bungalow", "'double garage'" })</example>
-        IPropertyOptions Keywords(string[] value);
+        IPropertyOptions Keywords(params string[] value);
 
         /// <summary>
         /// Specify a specific agencies branch to request listings for

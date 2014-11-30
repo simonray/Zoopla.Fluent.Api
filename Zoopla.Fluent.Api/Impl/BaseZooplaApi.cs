@@ -14,17 +14,17 @@ namespace Zoopla.Fluent.Api.Impl
     public abstract class BaseZooplaApi
     {
         /// <exclude/>
-        protected const string API_SERVER = "http://api.zoopla.co.uk";
+        private const string API_SERVER = "http://api.zoopla.co.uk";
         /// <exclude/>
-        protected const string API_LISTINGS_METHODS = "/api/v1/property_listings.json?api_key={0}";
+        private const string API_LISTINGS_METHODS = "/api/v1/property_listings.json?api_key={0}";
         /// <exclude/>
-        protected const string API_AUTOCOMPLETE_METHODS = "/api/v1/geo_autocomplete.json?api_key={0}&search_term={1}&search_type={2}";
+        private const string API_AUTOCOMPLETE_METHODS = "/api/v1/geo_autocomplete.json?api_key={0}&search_term={1}&search_type={2}";
         /// <Exclude/>
-        protected const string HTML_IMG_REGEX = @"<img[^>]*?src\s*=\s*[""']?([^'"" >]+?)[ '""][^>]*?>";
+        private const string HTML_IMG_REGEX = @"<img[^>]*?src\s*=\s*[""']?([^'"" >]+?)[ '""][^>]*?>";
+        /// <exclude/>
+        private string ApiKey { get; set; }
         /// <exclude/>
         protected NameValueCollection Parameters = new NameValueCollection();
-        /// <exclude/>
-        protected string ApiKey { get; set; }
 
         /// <exclude/>
         protected BaseZooplaApi(string apiKey)

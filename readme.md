@@ -1,4 +1,4 @@
-﻿# Zoopla.Fluent.Api (.NET)
+﻿# ZooplaFluentApi (.NET)
 
 The Zoopla Fluent API provides functionality to retieve property information into your application.
      

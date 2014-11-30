@@ -114,7 +114,7 @@ namespace Zoopla.Fluent.Api
                 get { Impl.IncludeImages = true; return new PropertyOptions(Impl); }
             }
 
-            public IPropertyOptions Keywords(params string[] value)
+            public IPropertyOptions Keywords(string[] value)
             {
                 return Impl.SetOption(ParameterType.Keywords.Val(), string.Join(" ", value), OptionType.Once);
             }

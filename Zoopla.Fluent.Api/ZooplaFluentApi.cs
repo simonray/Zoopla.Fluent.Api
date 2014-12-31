@@ -10,7 +10,7 @@ using Zoopla.Fluent.Api.Impl;
 
 namespace Zoopla.Fluent.Api
 {
-    /// <exclude />
+    ///<inheritDoc/>
     public sealed partial class ZooplaFluentApi : BaseZooplaApi, IZooplaFluentApi, IDisposable
     {
         #region IDisposable
@@ -52,7 +52,7 @@ namespace Zoopla.Fluent.Api
         }
 
         #region IPropertySearch
-        /// <exclude />
+        ///<inheritDoc/>
         public IPropertyTypes Sales
         {
             get
@@ -61,7 +61,7 @@ namespace Zoopla.Fluent.Api
             }
         }
 
-        /// <exclude />
+        ///<inheritDoc/>
         public IPropertyTypes Rentals
         {
             get
@@ -70,14 +70,14 @@ namespace Zoopla.Fluent.Api
             }
         }
 
-        /// <exclude />
+        ///<inheritDoc/>
         public IPropertyOptions Specific(int id)
         {
             Parameters.Add(ParameterType.ListingId.Val(), id.ToString());
             return new PropertyOptions(this);
         }
 
-        /// <exclude />
+        ///<inheritDoc/>
         public IPropertyOptions Specific(int[] ids)
         {
             foreach (int id in ids)
@@ -87,7 +87,7 @@ namespace Zoopla.Fluent.Api
             return new PropertyOptions(this);
         }
 
-        /// <exclude />
+        ///<inheritDoc/>
         public IList<ZooplaSuggestion> Suggestions(string term, SearchOption option)
         {
             List<ZooplaSuggestion> locations = new List<ZooplaSuggestion>();
@@ -97,13 +97,13 @@ namespace Zoopla.Fluent.Api
         #endregion
 
         #region IPropertyActions
-        /// <exclude />
+        ///<inheritDoc/>
         public int Count()
         {
             return ExecuteCount();
         }
 
-        /// <exclude />
+        ///<inheritDoc/>
         public IList<ZooplaListing> Go(int page)
         {
             return ExecuteQuery(page);
@@ -111,7 +111,7 @@ namespace Zoopla.Fluent.Api
         #endregion
 
         #region IPropertyLocation
-        /// <exclude />
+        ///<inheritDoc/>
         public IPropertyOptions In(string location)
         {
             if (Postcode.TryParse(location, false) != null)
@@ -124,7 +124,7 @@ namespace Zoopla.Fluent.Api
             }
         }
 
-        /// <exclude />
+        ///<inheritDoc/>
         public IPropertyOptions In(InOption option, string location)
         {
             switch (option)
